@@ -1,0 +1,215 @@
+{% load staticfiles %}
+div.jumbotron{
+  min-height:100vh;
+  background:url("../img/test-bg.jpg") no-repeat center;
+  background-size:cover;
+  margin-bottom:0;
+}
+
+.mt60{
+  margin-top:60px;
+}
+
+@media (max-width:600px) {
+  .mt60{
+    margin-top:0px;
+  }
+}
+
+@media (min-height:900px) {
+  .mt60{
+    margin-top:120px;
+  }
+}
+
+.main-page-color, #main-page-heading{
+  color:#fafffd;
+}
+
+h1#main-page-heading.text-right{
+  font-size:5em;
+}
+
+.mt20{
+  margin-top:20px;
+}
+
+.mt40{
+  margin-top:40px;
+}
+
+.mt80{
+  margin-top:80px;
+}
+
+p.text-justify.main-page-color.mt20{
+  font-size:1.4em;
+}
+
+h2.main-page-color{
+  color:#9fd356;
+}
+
+@media (max-width:600px) and (min-width:350px) {
+  h2.main-page-color{
+    color:#9fd356;
+    font-size:1.5em;
+  }
+}
+
+@media (min-height:900px) {
+  h2.main-page-color{
+    font-size:2em;
+  }
+}
+
+@media (max-width:350px) {
+  h2.main-page-color{
+    color:#9fd356;
+    font-size:1.2em;
+  }
+}
+
+.transparent-background{
+  background:transparent;
+  color:pink;
+  text-shadow:none;
+  font-weight:500;
+  border-color:#028090;
+  border:2px solid white;
+}
+
+div.jumbotron{
+  padding-top:0;
+}
+
+.navbar-inverse{
+  margin-bottom:0;
+  background:transparent;
+  background-image:none;
+  padding-top:40px;
+  border:none;
+}
+
+@media (max-width:767px) {
+  .navbar-inverse{
+    padding-top:0px;
+  }
+}
+
+div.container-fluid{
+  background:transparent;
+}
+
+div.navbar-header{
+  background:transparent;
+}
+
+div.navbar-header{
+  background:transparent;
+}
+
+div#navcol-1.collapse.navbar-collapse{
+  background:transparent;
+}
+
+.navbar{
+  background:transparent;
+  background-image:none;
+}
+
+.navbar-link-color{
+  color:white;
+}
+
+.navbar-link-color{
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+  color:#9fd356;
+  border-bottom:1px solid transparent;
+  font-size:1.2em;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover{
+  color:#fff;
+  background:none;
+  border:none;
+  box-shadow:none;
+  padding-left:20px;
+}
+
+li{
+  padding-left:20px;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover{
+  color:#fff;
+  background-color:transparent;
+  border-bottom:1px solid white;
+}
+
+@media (max-width:385px) {
+  h1#main-page-heading.text-center.main-page-color{
+    font-size:3.5em;
+  }
+}
+
+@media (max-width:600px) and (min-width:386px) {
+  h1#main-page-heading.text-center.main-page-color{
+    font-size:4em;
+  }
+}
+
+@media (min-height:900px) {
+  h1#main-page-heading.text-center.main-page-color{
+    font-size:5em;
+  }
+}
+
+@media (max-width:600px) and (min-width:350px) {
+  p.text-center.main-page-color.mt20{
+    font-size:1.4em;
+    padding:0 15px;
+  }
+}
+
+@media (min-height:900px) {
+  p.text-center.main-page-color.mt20{
+    font-size:2em;
+    padding:0 40px;
+  }
+}
+
+@media (max-width:360px) {
+  p.text-center.main-page-color.mt20{
+    font-size:1.3em;
+    padding:0 15px;
+  }
+}
+
+button.main-page-button{
+  width:80%;
+}
+
+@media (max-width:991px) {
+  button.main-page-button{
+    width:50%;
+  }
+}
+
+body{
+  padding:0;
+}
+
+@media (max-width:991px) {
+  #project-button{
+    margin-bottom:15px;
+  }
+}
+

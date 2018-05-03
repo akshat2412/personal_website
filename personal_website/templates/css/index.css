@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 2em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  float: left;
+  height: 59px;
+}
+
+.container .container {
+  width: 99.8202433628%;
+}
+
+.container .text {
+  width: 99.8202433628%;
+  min-height: 59px;
+  font-size: 1em;
+}
+
+.text {
+  float: left;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.container-1 {
+  position: relative;
+  clear: both;
+  z-index: 3;
+  width: 18.7994791666%;
+  margin: 217px 0 0 10%;
+}
+
+.container-3 {
+  position: relative;
+  z-index: 6;
+  width: 18.7994791666%;
+  margin: 217px 0 0 1.53125%;
+}
+
+.container-4 {
+  margin-left: -0.00693%;
+}
+
+.container-5 {
+  position: relative;
+  z-index: 9;
+  width: 18.7994791666%;
+  margin: 217px 0 0 1.70313%;
+}
+
+.container-6 {
+  margin-left: -0.16623%;
+}
+
+.container-7 {
+  position: relative;
+  z-index: 12;
+  width: 18.7994791666%;
+  margin: 217px 0 0 1.61719%;
+}
+
+.container-8 {
+  margin-left: -0.25627%;
+}
+
+.text-1 {
+  width: 66.3997395833%;
+  min-height: 102px;
+  margin: 26px 0 0 16.7994791666%;
+  font-size: 1.5em;
+}

@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 0.938em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  float: left;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.text-1 {
+  width: 66.3802083333%;
+  min-height: 67px;
+  margin: -140px 0 0 34.5599%;
+  padding: 4px;
+  font-size: 1em;
+}
+
+.text-2 {
+  width: 66.3997395833%;
+  min-height: 102px;
+  margin: 30px 0 0 16.79948%;
+  font-size: 3.2em;
+}
+
+.text-3 {
+  clear: both;
+  width: 66.3802083333%;
+  min-height: 67px;
+  margin: 44px 0 0 16.8%;
+  padding: 4px;
+  font-size: 1em;
+}

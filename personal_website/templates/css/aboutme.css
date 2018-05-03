@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 1em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  float: left;
+  color: rgb(0, 0, 0);
+}
+
+.text-1 {
+  width: 66.3997395833%;
+  min-height: 102px;
+  margin: 35px 0 0 16.7994791666%;
+  font-size: 3em;
+  text-align: center;
+}
+
+.text-2 {
+  clear: both;
+  width: 80%;
+  min-height: 261px;
+  margin: 37px 0 0 10%;
+  font-size: 1em;
+}

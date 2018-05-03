@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "css/styles.css" %}>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-link" href="#"> </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="#" class="navbar-link-color">About Me</a></li>
+                        <li role="presentation"><a href="#" class="navbar-link-color">Resume </a></li>
+                        <li role="presentation"><a href="#" class="navbar-link-color">Projects </a></li>
+                        <li role="presentation"><a href="#" class="navbar-link-color">Contact </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row mt60">
+                <div class="col-md-12">
+                    <h1 class="text-center main-page-color" id="main-page-heading">Akshat Gupta</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center main-page-color">Back-End Specialist | Full Stack Developer | Coder</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <p class="text-center main-page-color mt20">Hello Visitor! I am a fourth year B-Tech student in Computer Science, and this is my personal website. Currently I am looking for a good work opportunity and am available to work full time. Please feel free to explore this website
+                        to know more about me. Looking forward to work with you.</p>
+                </div>
+            </div>
+            <div class="row mt40">
+                <div class="col-md-4 col-md-offset-2 text-center">
+                    <button class="btn btn-primary btn-lg main-page-button" type="button" id="project-button">Resume </button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button class="btn btn-primary btn-lg text-center main-page-button" type="button">Projects </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

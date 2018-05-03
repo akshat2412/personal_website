@@ -1,0 +1,29 @@
+{% load staticfiles%}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>single-project</title>
+  <link rel="stylesheet" href={% static "css/standardize.css" %}>
+  <link rel="stylesheet" href={% static "css/single-project-grid.css" %}>
+  <link rel="stylesheet" href={% static "css/single-project.css" %}>
+</head>
+<body class="body page-single-project clearfix">
+  <p class="text text-1">{{project_data.name}}</p>
+  <p class="text text-2">{{project_data.summary}}</p>
+  <div class="container container-1 clearfix">
+    <p class="text text-3">Technologies Used</p>
+    <div class="text text-4">
+      <ul>
+        {% for i in project_data.technology %}
+          <li>{{i.name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="container"></div>
+  </div>
+  <div class="element"></div>
+  <p class="text text-5">{{project_data.description}}</p>
+</body>
+</html>

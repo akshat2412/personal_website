@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>projects</title>
+  <link rel="stylesheet" href={% static "css/standardize.css" %}>
+  <link rel="stylesheet" href={% static "css/projects-grid.css" %}>
+  <link rel="stylesheet" href={% static "css/projects.css" %}>
+</head>
+<body class="body page-projects clearfix">
+  <p class="text text-1">Projects</p>
+  <div class="container container-1 clearfix"></div>
+  {% for project in projects_data%}
+  
+    <div class="container container-2 clearfix">
+      <div class="element element-2"></div>
+      <p class="text">{{project.name}}</p>
+    </div>
+    <!-- <div class="container container-3"></div> -->
+
+    <p class="text text-3">{{project.summary}}</p>
+  {% endfor%}
+  <!-- <div class="container container-4 clearfix">
+    <div class="element element-3"></div>
+    <p class="text">Title</p>
+  </div>
+  <p class="text text-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat eros quis mattis malesuada. Donec laoreet odio velit, in porta odio faucibus vel. Quisque varius mauris justo, nec luctus nisi porta ut. Integer malesuada sem nec metus consequat vulputate. Nulla euismod pellentesque tortor, vitae ultrices lectus dictum ac. Morbi vel nisi et urna vulputate lacinia vel efficitur nisl. Quisque ut euismod sapien, et maximus justo.</p> -->
+</body>
+</html>
