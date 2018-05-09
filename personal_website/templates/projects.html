@@ -1,31 +1,51 @@
-{% load staticfiles %}
-<!doctype html>
+{% load staticfiles%}
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>projects</title>
-  <link rel="stylesheet" href={% static "css/standardize.css" %}>
-  <link rel="stylesheet" href={% static "css/projects-grid.css" %}>
-  <link rel="stylesheet" href={% static "css/projects.css" %}>
-</head>
-<body class="body page-projects clearfix">
-  <p class="text text-1">Projects</p>
-  <div class="container container-1 clearfix"></div>
-  {% for project in projects_data%}
-  
-    <div class="container container-2 clearfix">
-      <div class="element element-2"></div>
-      <p class="text">{{project.name}}</p>
-    </div>
-    <!-- <div class="container container-3"></div> -->
 
-    <p class="text text-3">{{project.summary}}</p>
-  {% endfor%}
-  <!-- <div class="container container-4 clearfix">
-    <div class="element element-3"></div>
-    <p class="text">Title</p>
-  </div>
-  <p class="text text-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat eros quis mattis malesuada. Donec laoreet odio velit, in porta odio faucibus vel. Quisque varius mauris justo, nec luctus nisi porta ut. Integer malesuada sem nec metus consequat vulputate. Nulla euismod pellentesque tortor, vitae ultrices lectus dictum ac. Morbi vel nisi et urna vulputate lacinia vel efficitur nisl. Quisque ut euismod sapien, et maximus justo.</p> -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href={% static "css/Header-Dark.css" %}>
+    <link rel="stylesheet" href={% static "css/projects.css" %}>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Projects</h1>
+                </div>
+            </div>
+            <div class="row mt20">
+                <div class="col">
+                    <h4 class="text-center">These are some of the projects that I did.</h4>
+                </div>
+            </div>
+            <div class="row mt20">
+                {% for project in projects_data%}
+                    <div class="col-10 col-sm-10 col-lg-6 offset-1 offset-sm-1 offset-lg-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">{{project.name}}</h4>
+                                <h6 class="text-muted card-subtitle mb-2 mt20">Technologies Used</h6>
+                                <ul class="d-flex justify-content-start align-items-center align-content-start flex-wrap">
+                                    {% for technology in project.technology %}
+                                        <li>{{ technology.name }}</li>
+                                    {% endfor %}
+                                </ul>
+                                <p class="card-text">{{project.summary}}</p><a class="card-link" href="#">Read More</a></div>
+                        </div>
+                    </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
+    <script src={% static "js/jquery.min.js" %}></script>
+    <script src={% static "bootstrap/js/bootstrap.min.js" %}></script>
 </body>
+
 </html>
