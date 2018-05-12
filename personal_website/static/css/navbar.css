@@ -1,0 +1,17 @@
+.nav-item {
+  margin-right:20px;
+  font-size:24px;
+  font-family:Alegreya, serif;
+  color:#9fd356;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#9fd356;
+}
+
+@media (min-width: 992px) {
+  .navbar.navbar-light.navbar-expand-md {
+    margin-bottom:30px;
+  }
+}
+
