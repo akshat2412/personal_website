@@ -10,5 +10,5 @@ urlpatterns = [
 
     # url(r'^admin/', include(admin.site.urls)),
     url('^$', ProjectsView.as_view(), name = 'Projects-Home'),
-    url("^(?P<project_id>[0-9]{2})/$", SingleProjectView.as_view(), name = 'Single-Project-Home'),
+    url("^(?P<project_id>[0-9]*)/$", SingleProjectView.as_view(), name = 'Single-Project-Home'),
 ]

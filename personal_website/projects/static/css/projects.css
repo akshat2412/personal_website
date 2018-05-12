@@ -2,13 +2,16 @@
 .jumbotron {
   background:url('../img/projects-bg-2.jpg');
   min-height:100vh;
+  margin:0;
+  padding-top:20px;
   /*background-size:cover;*/
-  margin-bottom: 0;
   background-attachment:fixed;
 }
 
-.mt20 {
-  margin-top:20px;
+@media (min-width: 576px) {
+  .jumbotron {
+    padding-top:45px;
+  }
 }
 
 .mt40 {
@@ -25,9 +28,59 @@
 
 li {
   margin-right:35px;
+  font-size:22px;
+  font-family:'Abhaya Libre', serif;
+}
+
+@media (min-width:576px) and (max-width:992px) {
+  .card-columns {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+    -webkit-column-gap:1.25rem;
+    -moz-column-gap:1.25rem;
+    column-gap:1.25rem;
+  }
+}
+
+@media (min-width:991px) {
+  .card-columns {
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+    -webkit-column-gap:1.25rem;
+    -moz-column-gap:1.25rem;
+    column-gap:1.25rem;
+  }
+}
+
+.mt20 {
+  margin-top:20px;
+}
+
+.mt10 {
+  margin-top:10px;
 }
 
 .card {
-  margin-top:20px;
+  box-shadow:2px 2px 20px #a6a6a6;
+}
+
+h6 {
+  font-size:22px;
+  font-family:ABeeZee, sans-serif;
+  color:#9fd356;
+}
+
+@media (min-width: 992px) {
+  p {
+    padding:0 70px;
+  }
+}
+
+p {
+  font-size:18px;
+  font-family:'Abhaya Libre', serif;
+  color:#737373;
 }
 
