@@ -8,8 +8,8 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', HomeView.as_view(), name = 'Home'),
-    url(r'^projects/', include('projects.urls')),
+    url(r'^$', HomeView.as_view(),name = 'Home'),
+    url(r'^projects/', include('projects.urls', namespace='Projects')),
     url(r'^resume/', include('resume.urls')),
     url(r'^contact/', include('contact.urls')),
 ]

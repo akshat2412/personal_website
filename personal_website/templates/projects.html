@@ -46,7 +46,7 @@
                                 {% endfor%}
                             </ul>
                             <p class="text-center card-text">{{project.summary}}</p>
-                            <div class="d-flex justify-content-center align-items-center"><a href={% url 'Single-Project-Home' project.id %} class="card-link">Read More</a></div>
+                            <div class="d-flex justify-content-center align-items-center"><a href={% url 'Projects:Single-Project-Home' project.id %} class="card-link">Read More</a></div>
                         </div>
                     </div>
                     {% endfor %}

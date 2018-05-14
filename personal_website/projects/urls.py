@@ -9,6 +9,6 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     # url(r'^admin/', include(admin.site.urls)),
-    url('^$', ProjectsView.as_view(), name = 'Projects-Home'),
+    url('^$', ProjectsView.as_view(), name = 'Home'),
     url("^(?P<project_id>[0-9]*)/$", SingleProjectView.as_view(), name = 'Single-Project-Home'),
 ]
