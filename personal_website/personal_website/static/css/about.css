@@ -1,0 +1,58 @@
+.jumbotron {
+  background:url('../img/projects-bg-2.jpg');
+  min-height:100vh;
+  margin:0;
+  padding-top:20px;
+  /*background-size:cover;*/
+  background-attachment:fixed;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding-top:45px;
+  }
+}
+
+.mt40 {
+  margin-top:40px;
+}
+
+.mt60 {
+  margin-top:60px;
+}
+
+.mt80 {
+  margin-top:80px;
+}
+
+.mt20 {
+  margin-top:20px;
+}
+
+.mt10 {
+  margin-top:10px;
+}
+
+h6 {
+  font-size:22px;
+  font-family:ABeeZee, sans-serif;
+  color:#9fd356;
+}
+
+p {
+  font-size:20px;
+  font-family:'Abhaya Libre', serif;
+  color:#737373;
+}
+
+img {
+  height:150px;
+  width:150px;
+  /*border-radius:50%;*/
+}
+
+.bio-endpoints {
+  color:black;
+  font-size:22px;
+}
+

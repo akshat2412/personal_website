@@ -5,48 +5,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing</title>
+    <title>Home</title>
     <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
-    <link rel="stylesheet" href={% static "css/styles.css" %}>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:700|Assistant:300">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:300|Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href={% static "css/Home.css" %}>
 </head>
 
 <body>
     <div class="jumbotron">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand navbar-link" href="#"> </a>
-                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                </div>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li role="presentation"><a href="#" class="navbar-link-color">About Me</a></li>
-                        <li role="presentation"><a href="#" class="navbar-link-color">Resume </a></li>
-                        <li role="presentation"><a href="#" class="navbar-link-color">Projects </a></li>
-                        <li role="presentation"><a href="#" class="navbar-link-color">Contact </a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="row main-row">
-                <div class="col-md-12">
-                    <h1 class="text-center main-page-color" id="main-page-heading">Akshat Gupta</h1></div>
-            </div>
+        {% include "navbar.html" %}
+        <div class="container mt60">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center main-page-color">Back-End Specialist | Full Stack Developer | Coder</h2></div>
-            </div>
-            <div class="row mt40">
-                <div class="col-md-3 col-md-offset-3 text-center">
-                    <button class="btn btn-primary btn-lg main-page-button" type="button" id="project-button">Resume </button>
-                </div>
-                <div class="col-md-3 text-center">
-                    <button class="btn btn-primary btn-lg text-center main-page-button" type="button">Projects </button>
+                <div class="col">
+                    <h1 class="text-center">Akshat Gupta</h1>
                 </div>
             </div>
+            <div class="row mt10">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 offset-lg-0" id="designation-1">
+                            <p class="text-center">Software Developer</p>
+                        </div>
+                        <div class="col-12 col-lg-4" id="designation-2">
+                            <p class="text-center">Back-End Developer</p>
+                        </div>
+                        <div class="col-lg-4" id="designation-3">
+                            <p class="text-center">Full-Stack Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt40" id="button-row">
+            <div class="col-12 col-lg-3 offset-lg-3 d-flex justify-content-center mb20"><a class="btn btn-primary btn-lg" type="button" href="#" >Resume</a></div>
+            <div class="col-12 col-lg-3 offset-lg-0 d-flex justify-content-center mb20"><a class="btn btn-primary btn-lg" type="button" href = {% url 'Projects:Home' %}>Projects</a></div>
         </div>
     </div>
     <script src={% static "js/jquery.min.js" %}></script>

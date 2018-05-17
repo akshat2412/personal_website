@@ -1,0 +1,68 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Antic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href={% static "css/about.css" %}>
+</head>
+
+<body>
+    <div class="jumbotron">
+        {% include "navbar.html" %}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center" style="font-family:'Alfa Slab One', cursive;font-size:40px;">About Me</h1>
+                </div>
+            </div>
+            <div class="row mt40">
+                <div class="col-12 d-flex justify-content-center"><img class="rounded-circle" src={% static "img/DSC_0017.jpeg" %}></div>
+            </div>
+        </div>
+        <div class="row mt40">
+            <div class="col-lg-8 offset-lg-2">
+                <div>
+                    <p class="text-center bio-endpoints">Hi! My name is Akshat. I am a software developer and I love to build software that ease life for people. &nbsp;Looking for an opportunity, I would love to hear from you.</p>
+                </div>
+                <div>
+                    <p class="text-center">I am Computer Science B-Tech student from Guru Gobind Singh Indraprastha university, and graduating this year. I started with learning Data Structures and Algorithms, which opened up a new world for me. I took a little detour after
+                        that and delved into the world of development, did various courses on web development and met some amazing people.</p>
+                </div>
+                <div>
+                    <p class="text-center">I like building web apps and learning new technologies. You can find my projects in the 'Projects' section. I have built single page applications as well as full fledged machine learning based web apps. When given an opportunity, I
+                        would love to work on complex problems, that matter in day to day lives of people, and which have the power to bring a change in lifestyle of people and society.</p>
+                    <div>
+                        <p class="text-center">Apart from my professional life, I love to play Cricket, video games, singing and drawing. I also like surfing on the Internet, which also helped me in deciding some of my projects. I believe that a good engineer should have great
+                            searching skills on the Internet, and should know where to look for answers.</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center">I have interned with Josh Technology Group in the summer of 2017 where I was among the 4 people selected from our batch. I also did an internship at HT Media Labs as a software developer. People who I worked along with describe me
+                        as a quick learner, hard working and curious.</p>
+                </div>
+                <div>
+                    <p class="text-center bio-endpoints">Currently, I am about to finish my graduation in a few months. I am actively looking for an opportunity where I can use my skills, which provides a great learning and dynamic environment, and pushes me to be better. I would love to
+                        hear from you about any opportunities or feedback.</p>
+                </div>
+            </div>
+        </div><i class="fa fa-star"></i></div>
+    <script src={% static "js/jquery.min.js" %}></script>
+    <script src={% static "bootstrap/js/bootstrap.min.js" %}></script>
+</body>
+
+</html>
