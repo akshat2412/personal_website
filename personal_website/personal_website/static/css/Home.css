@@ -3,7 +3,7 @@
   background:url('../img/projects-bg-2.jpg');
   min-height:100vh;
   margin:0;
-  padding-top:20px;
+  padding-top::;px;
   /*background-size:cover;*/
   background-attachment:fixed;
 }
@@ -117,11 +117,17 @@ p {
   margin-bottom:20px;
 }
 
+@media (max-width: 576px) {
+  .container {
+    margin-top:20px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     margin-top:80px;
   }
 }
+
 
 #designation-2 {
   padding:0;
